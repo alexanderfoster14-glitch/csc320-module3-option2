@@ -90,18 +90,18 @@ public class module3_option2_grocerybill {
 		System.out.println("Entery week 4 total grocery bill amount: ");
 		week4Total = scnr.nextDouble();
 		
-		double totalMonthly; //Total of week1+2+3+4
+		double monthlyTotal; //Total of week1+2+3+4
 		double weeklyAverage; //average totalMontly / 4
 		
-		totalMonthly = week1Total + week2Total + week3Total + week4Total;
-		weeklyAverage = totalMonthly / 4;
+		monthlyTotal = week1Total + week2Total + week3Total + week4Total;
+		weeklyAverage = monthlyTotal / 4;
 		
 		//Monthly and weekly amount without coupon
-		System.out.println("Monthy total of grocery bills without coupon: " + totalMonthly);
+		System.out.println("Monthy total of grocery bills without coupon: " + monthlyTotal);
 		System.out.println("Weekly average of grocery bills without coupon: " + weeklyAverage);
 		
 		//Monthly and weekly amount WITH coupon
-		System.out.println("Monthly total of grocery bills with coupon: " + (totalMonthly * couponAmount));
+		System.out.println("Monthly total of grocery bills with coupon: " + (monthlyTotal * couponAmount));
 		System.out.println("Weekly average of grocery bills with coupon: " + (weeklyAverage * couponAmount));
 			
 	}
