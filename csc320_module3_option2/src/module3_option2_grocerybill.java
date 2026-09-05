@@ -28,16 +28,16 @@ main {
 	couponAmount = nextDouble
 	if couponAmount >= 100% or if couponAmount <= 0%, set couponAmount to 10% by default
 	
-	system.out.println("Enter week 1 grocery bill total amount: ")
+	system.out.println("Enter week 1 grocery bill amount: ")
 	week1Total = input
 
-	system.out.println("Enter week 2 grocery bill total amount: ")
+	system.out.println("Enter week 2 grocery bill amount: ")
 	week2Total = input
 	
-	system.out.println("Enter week 3 grocery bill total amount: ")
+	system.out.println("Enter week 3 grocery bill amount: ")
 	week3Total = input
 	
-	system.out.println("Enter week 4 grocery bill total amount: ")
+	system.out.println("Enter week 4 grocery bill amount: ")
 	week4Total = input
 	
 	totalMonthly = week1Total + week2Total + week3Total + week4Total
@@ -48,7 +48,17 @@ main {
 	system.out.println("Weekly average without coupon: " + weeklyAverage)
 	
 	system.out.println("Monthly total with coupon: " + (totalMonthly*couponAmont))
-	system.out.println("Weekly average with coupon: " + (weeklyAverage*couponAmont))	
+	system.out.println("Weekly average with coupon: " + (weeklyAverage*couponAmont))
+	
+	//Use below as check. Comment out once verified
+		/*
+		System.out.println("----- This is a check -----");
+		System.out.println("couponAmount = " + couponAmount);
+		System.out.println("week1Total = " + week1Total);
+		System.out.println("week2Total = " + week2Total);
+		System.out.println("week3Total = " + week3Total);
+		System.out.println("week4Total = " + week4Total);
+	*/
 
 */
 
@@ -82,13 +92,11 @@ public class module3_option2_grocerybill {
 		System.out.println("Entery week 4 total grocery bill amount: ");
 		week4Total = scnr.nextDouble();
 		
-		//Use below as check. Comment out once verified
-		System.out.println("----- This is a check -----");
-		System.out.println("couponAmount = " + couponAmount);
-		System.out.println("week1Total = " + week1Total);
-		System.out.println("week2Total = " + week2Total);
-		System.out.println("week3Total = " + week3Total);
-		System.out.println("week4Total = " + week4Total);
+		double totalMonthly; //Total of week1+2+3+4
+		double weeklyAverage; //average totalMontly / 4
+		
+		totalMonthly = week1Total + week2Total + week3Total + week4Total;
+		weeklyAverage = totalMonthly / 4;
 		
 		
 	}
