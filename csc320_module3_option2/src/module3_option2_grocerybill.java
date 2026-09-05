@@ -103,7 +103,7 @@ public class module3_option2_grocerybill {
 		//Monthly and weekly amount WITH coupon
 		System.out.println("Monthly total of grocery bills with coupon: " + (monthlyTotal * couponAmount));
 		System.out.println("Weekly average of grocery bills with coupon: " + (weeklyAverage * couponAmount));
-			
+		
 	}
 	
 }
