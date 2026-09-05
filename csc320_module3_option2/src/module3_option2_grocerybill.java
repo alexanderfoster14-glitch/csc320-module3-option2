@@ -15,7 +15,6 @@ Create a program that can be used to calculate the average weekly and
 		of the application executing the application, the results and
 		GIT repository in a single document.
 
-
 **/
 
 /*
@@ -82,43 +81,43 @@ public class module3_option2_grocerybill {
 		}
 		
 		//Get input for 1st week bills (4 people)
-		System.out.println("Enter person #1 total grocery bill amount: $");
+		System.out.println("1st Week: Enter person #1 total grocery bill amount: $");
 		week1Total = scnr.nextDouble();
-		System.out.println("Enter person #2 total grocery bill amount: $");
+		System.out.println("1st Week: Enter person #2 total grocery bill amount: $");
 		week1Total = week1Total + scnr.nextDouble();
-		System.out.println("Enter person #3 total grocery bill amount: $");
+		System.out.println("1st Week: Enter person #3 total grocery bill amount: $");
 		week1Total = week1Total + scnr.nextDouble();
-		System.out.println("Enter person #4 total grocery bill amount: $");
+		System.out.println("1st Week: Enter person #4 total grocery bill amount: $");
 		week1Total = week1Total + scnr.nextDouble();
 
 		//Get input for 2nd week bills (4 people)
-		System.out.println("Enter person #1 total grocery bill amount: $");
+		System.out.println("Week 2: Enter person #1 total grocery bill amount: $");
 		week2Total = scnr.nextDouble();
-		System.out.println("Enter person #2 total grocery bill amount: $");
+		System.out.println("Week 2: Enter person #2 total grocery bill amount: $");
 		week2Total = week2Total + scnr.nextDouble();
-		System.out.println("Enter person #3 total grocery bill amount: $");
+		System.out.println("Week 2: Enter person #3 total grocery bill amount: $");
 		week2Total = week2Total + scnr.nextDouble();
-		System.out.println("Enter person #4 total grocery bill amount: $");
+		System.out.println("Week 2: Enter person #4 total grocery bill amount: $");
 		week2Total = week2Total + scnr.nextDouble();
 
 		//Get input for 3rd week bills (4 people)
-		System.out.println("Enter person #1 total grocery bill amount: $");
+		System.out.println("Week 3: Enter person #1 total grocery bill amount: $");
 		week3Total = scnr.nextDouble();
-		System.out.println("Enter person #2 total grocery bill amount: $");
+		System.out.println("Week 3: Enter person #2 total grocery bill amount: $");
 		week3Total = week3Total + scnr.nextDouble();
-		System.out.println("Enter person #3 total grocery bill amount: $");
+		System.out.println("Week 3: Enter person #3 total grocery bill amount: $");
 		week3Total = week3Total + scnr.nextDouble();
-		System.out.println("Enter person #4 total grocery bill amount: $");
+		System.out.println("Week 3: Enter person #4 total grocery bill amount: $");
 		week3Total = week3Total + scnr.nextDouble();
 
 		//Get input for 4th week bills (4 people)
-		System.out.println("Enter person #1 total grocery bill amount: $");
+		System.out.println("Week 4: Enter person #1 total grocery bill amount: $");
 		week4Total = scnr.nextDouble();
-		System.out.println("Enter person #2 total grocery bill amount: $");
+		System.out.println("Week 4: Enter person #2 total grocery bill amount: $");
 		week4Total = week4Total + scnr.nextDouble();
-		System.out.println("Enter person #3 total grocery bill amount: $");
+		System.out.println("Week 4: Enter person #3 total grocery bill amount: $");
 		week4Total = week4Total + scnr.nextDouble();
-		System.out.println("Enter person #4 total grocery bill amount: $");
+		System.out.println("Week 4: Enter person #4 total grocery bill amount: $");
 		week4Total = week4Total + scnr.nextDouble();
 
 		//Calculate monthly total and weekly average
