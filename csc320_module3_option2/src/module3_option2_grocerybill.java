@@ -21,13 +21,76 @@ Create a program that can be used to calculate the average weekly and
 /*
 Pseudo Code Outline
 
+import scanner
+
+main {
+	system.out.println("Please enter coupon amount: ")
+	couponAmount = nextDouble
+	if couponAmount >= 100% or if couponAmount <= 0%, set couponAmount to 10% by default
+	
+	system.out.println("Enter week 1 grocery bill total amount: ")
+	week1Total = input
+
+	system.out.println("Enter week 2 grocery bill total amount: ")
+	week2Total = input
+	
+	system.out.println("Enter week 3 grocery bill total amount: ")
+	week3Total = input
+	
+	system.out.println("Enter week 4 grocery bill total amount: ")
+	week4Total = input
+	
+	totalMonthly = week1Total + week2Total + week3Total + week4Total
+	
+	weeklyAverage = (week1Total + week2Total + week3Total + week4Total)/4
+	
+	system.out.println("Monthly total without coupon: " + totalMonthly)
+	system.out.println("Weekly average without coupon: " + weeklyAverage)
+	
+	system.out.println("Monthly total with coupon: " + (totalMonthly*couponAmont))
+	system.out.println("Weekly average with coupon: " + (weeklyAverage*couponAmont))	
 
 */
+
+import java.util.Scanner;
 
 public class module3_option2_grocerybill {
 	
 	public static void main(String[] args) {
-		System.out.println("test");
+		Scanner scnr = new Scanner(System.in);
+		
+		double couponAmount; //coupon percentage entered by user
+		
+		double week1Total; //week 1 total grocery bill amount
+		double week2Total; //week 2 total grocery bill amount
+		double week3Total; //week 3 total grocery bill amount
+		double week4Total; //week 4 total grocery bill amount
+		
+		System.out.println("Please enter coupon amount as decimal (example: .10 as 10%): ");
+		
+		couponAmount = scnr.nextDouble();
+		
+		System.out.println("Entery week 1 total grocery bill amount: ");
+		week1Total = scnr.nextDouble();
+		
+		System.out.println("Entery week 2 total grocery bill amount: ");
+		week2Total = scnr.nextDouble();
+		
+		System.out.println("Entery week 3 total grocery bill amount: ");
+		week3Total = scnr.nextDouble();
+		
+		System.out.println("Entery week 4 total grocery bill amount: ");
+		week4Total = scnr.nextDouble();
+		
+		//Use below as check. Comment out once verified
+		System.out.println("----- This is a check -----");
+		System.out.println("couponAmount = " + couponAmount);
+		System.out.println("week1Total = " + week1Total);
+		System.out.println("week2Total = " + week2Total);
+		System.out.println("week3Total = " + week3Total);
+		System.out.println("week4Total = " + week4Total);
+		
+		
 	}
 	
 }
