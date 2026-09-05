@@ -51,14 +51,12 @@ main {
 	system.out.println("Weekly average with coupon: " + (weeklyAverage*couponAmont))
 	
 	//Use below as check. Comment out once verified
-		/*
 		System.out.println("----- This is a check -----");
 		System.out.println("couponAmount = " + couponAmount);
 		System.out.println("week1Total = " + week1Total);
 		System.out.println("week2Total = " + week2Total);
 		System.out.println("week3Total = " + week3Total);
 		System.out.println("week4Total = " + week4Total);
-	*/
 
 */
 
@@ -98,7 +96,14 @@ public class module3_option2_grocerybill {
 		totalMonthly = week1Total + week2Total + week3Total + week4Total;
 		weeklyAverage = totalMonthly / 4;
 		
+		//Monthly and weekly amount without coupon
+		System.out.println("Monthy total of grocery bills without coupon: " + totalMonthly);
+		System.out.println("Weekly average of grocery bills without coupon: " + weeklyAverage);
 		
+		//Monthly and weekly amount WITH coupon
+		System.out.println("Monthly total of grocery bills with coupon: " + (totalMonthly * couponAmount));
+		System.out.println("Weekly average of grocery bills with coupon: " + (weeklyAverage * couponAmount));
+			
 	}
 	
 }
