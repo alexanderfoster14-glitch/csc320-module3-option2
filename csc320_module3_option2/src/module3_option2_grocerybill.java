@@ -28,17 +28,12 @@ main {
 	couponAmount = nextDouble
 	if couponAmount >= 100% or if couponAmount <= 0%, set couponAmount to 10% by default
 	
-	system.out.println("Enter week 1 grocery bill amount: ")
-	week1Total = input
-
-	system.out.println("Enter week 2 grocery bill amount: ")
-	week2Total = input
-	
-	system.out.println("Enter week 3 grocery bill amount: ")
-	week3Total = input
-	
-	system.out.println("Enter week 4 grocery bill amount: ")
-	week4Total = input
+	system.out.println("Enter 1st person week 1 grocery bill amount: ")
+	need input for 4 people
+	ask for input 4 times, 1 per person	
+	week1Total = input1 + input2 + input3 + input4
+		
+	2nd week, 3rd week, 4th week - same process
 	
 	totalMonthly = week1Total + week2Total + week3Total + week4Total
 	
@@ -57,6 +52,9 @@ main {
 		System.out.println("week2Total = " + week2Total);
 		System.out.println("week3Total = " + week3Total);
 		System.out.println("week4Total = " + week4Total);
+	
+	rounding format for 2 decimal places, ending in new line:
+		System.out.printf("%.2f\n", amount to round);
 
 */
 
@@ -74,22 +72,29 @@ public class module3_option2_grocerybill {
 		double week3Total; //week 3 total grocery bill amount
 		double week4Total; //week 4 total grocery bill amount
 		
-		System.out.println("Please enter coupon amount as decimal (example: .10 as 10%): ");
+		System.out.println("Please enter coupon amount as decimal greater than 0.00 and less than or equal to 1.00 (example: .10 as 10%): ");
 		
 		couponAmount = scnr.nextDouble();
 		
-		System.out.println("Entery week 1 total grocery bill amount: ");
+		//check couponAmount is in correct range or change value to 0.10
+		if(couponAmount > 1 || couponAmount <= 0) {
+			couponAmount = 0.1;
+		}
+		
+		//Get input for weekly bill amounts (4 weeks)
+		System.out.println("Entery week 1 total grocery bill amount: $");
 		week1Total = scnr.nextDouble();
 		
-		System.out.println("Entery week 2 total grocery bill amount: ");
+		System.out.println("Entery week 2 total grocery bill amount: $");
 		week2Total = scnr.nextDouble();
 		
-		System.out.println("Entery week 3 total grocery bill amount: ");
+		System.out.println("Entery week 3 total grocery bill amount: $");
 		week3Total = scnr.nextDouble();
 		
-		System.out.println("Entery week 4 total grocery bill amount: ");
+		System.out.println("Entery week 4 total grocery bill amount: $");
 		week4Total = scnr.nextDouble();
 		
+		//Calculate monthly total and weekly average
 		double monthlyTotal; //Total of week1+2+3+4
 		double weeklyAverage; //average totalMontly / 4
 		
@@ -97,12 +102,16 @@ public class module3_option2_grocerybill {
 		weeklyAverage = monthlyTotal / 4;
 		
 		//Monthly and weekly amount without coupon
-		System.out.println("Monthy total of grocery bills without coupon: " + monthlyTotal);
-		System.out.println("Weekly average of grocery bills without coupon: " + weeklyAverage);
+		System.out.print("Monthy total of grocery bills without coupon: $");
+		System.out.printf("%.2f\n", monthlyTotal);
+		System.out.print("Weekly average of grocery bills without coupon: $");
+		System.out.printf("%.2f\n", weeklyAverage);
 		
 		//Monthly and weekly amount WITH coupon
-		System.out.println("Monthly total of grocery bills with coupon: " + (monthlyTotal * couponAmount));
-		System.out.println("Weekly average of grocery bills with coupon: " + (weeklyAverage * couponAmount));
+		System.out.print("Monthly total of grocery bills with coupon: $");
+		System.out.printf("%.2f\n",(monthlyTotal * (1-couponAmount)));
+		System.out.print("Weekly average of grocery bills with coupon: $");
+		System.out.printf("%.2f\n", (weeklyAverage * (1-couponAmount)));
 		
 	}
 	
